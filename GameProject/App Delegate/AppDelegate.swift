@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Setup Nav Controller
         let rootNav = RootNavigationViewController()
         rootNav.viewControllers = [MainViewController()]
+        // Change Happened
         
         // Make Window Visible & Assign Root VC's
         window?.rootViewController = rootNav
