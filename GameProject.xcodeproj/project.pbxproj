@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		BA1E3C1520A4A02A008A3945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E3C1420A4A02A008A3945 /* AppDelegate.swift */; };
-		BA1E3C1720A4A02A008A3945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E3C1620A4A02A008A3945 /* ViewController.swift */; };
-		BA1E3C1A20A4A02A008A3945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1E3C1820A4A02A008A3945 /* Main.storyboard */; };
+		BA1E3C1720A4A02A008A3945 /* Main VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E3C1620A4A02A008A3945 /* Main VC.swift */; };
 		BA1E3C1C20A4A02B008A3945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1E3C1B20A4A02B008A3945 /* Assets.xcassets */; };
-		BA1E3C1F20A4A02B008A3945 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1E3C1D20A4A02B008A3945 /* LaunchScreen.storyboard */; };
+		BA1E3C2A20A4A0FE008A3945 /* Root Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E3C2920A4A0FE008A3945 /* Root Nav.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA1E3C1120A4A02A008A3945 /* GameProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1E3C1420A4A02A008A3945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA1E3C1620A4A02A008A3945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA1E3C1920A4A02A008A3945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA1E3C1620A4A02A008A3945 /* Main VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main VC.swift"; sourceTree = "<group>"; };
 		BA1E3C1B20A4A02B008A3945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BA1E3C1E20A4A02B008A3945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1E3C2020A4A02B008A3945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1E3C2920A4A0FE008A3945 /* Root Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root Nav.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +52,37 @@
 		BA1E3C1320A4A02A008A3945 /* GameProject */ = {
 			isa = PBXGroup;
 			children = (
-				BA1E3C1420A4A02A008A3945 /* AppDelegate.swift */,
-				BA1E3C1620A4A02A008A3945 /* ViewController.swift */,
-				BA1E3C1820A4A02A008A3945 /* Main.storyboard */,
-				BA1E3C1B20A4A02B008A3945 /* Assets.xcassets */,
-				BA1E3C1D20A4A02B008A3945 /* LaunchScreen.storyboard */,
-				BA1E3C2020A4A02B008A3945 /* Info.plist */,
+				BA1E3C2620A4A03C008A3945 /* App Delegate */,
+				BA1E3C2820A4A0B9008A3945 /* View Controllers */,
+				BA1E3C2720A4A051008A3945 /* Resoruces */,
 			);
 			path = GameProject;
+			sourceTree = "<group>";
+		};
+		BA1E3C2620A4A03C008A3945 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E3C1420A4A02A008A3945 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		BA1E3C2720A4A051008A3945 /* Resoruces */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E3C1B20A4A02B008A3945 /* Assets.xcassets */,
+				BA1E3C2020A4A02B008A3945 /* Info.plist */,
+			);
+			path = Resoruces;
+			sourceTree = "<group>";
+		};
+		BA1E3C2820A4A0B9008A3945 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E3C2920A4A0FE008A3945 /* Root Nav.swift */,
+				BA1E3C1620A4A02A008A3945 /* Main VC.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA1E3C1F20A4A02B008A3945 /* LaunchScreen.storyboard in Resources */,
 				BA1E3C1C20A4A02B008A3945 /* Assets.xcassets in Resources */,
-				BA1E3C1A20A4A02A008A3945 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA1E3C1720A4A02A008A3945 /* ViewController.swift in Sources */,
+				BA1E3C2A20A4A0FE008A3945 /* Root Nav.swift in Sources */,
+				BA1E3C1720A4A02A008A3945 /* Main VC.swift in Sources */,
 				BA1E3C1520A4A02A008A3945 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BA1E3C1820A4A02A008A3945 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA1E3C1920A4A02A008A3945 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BA1E3C1D20A4A02B008A3945 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA1E3C1E20A4A02B008A3945 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BA1E3C2120A4A02B008A3945 /* Debug */ = {
@@ -282,7 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SRSHZ764K7;
-				INFOPLIST_FILE = GameProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GameProject/Resoruces/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SRSHZ764K7;
-				INFOPLIST_FILE = GameProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GameProject/Resoruces/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
